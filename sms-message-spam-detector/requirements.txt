@@ -1,0 +1,6 @@
+pandas
+numpy
+flask
+pylint
+sklearn 
+locust

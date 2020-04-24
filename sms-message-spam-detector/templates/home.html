@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/custom-styles.css') }}">
+</head>
+<body>
+
+	<header id="header">
+    <div class="container d-flex">
+
+      <div class="text-center col-md-12">
+        <h1 class="text-light"><a class="headerText" href="Home.html">Spam Detector For SMS Messages<span>.</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>  
+    </div>
+  </header><!-- End Header --> 
+
+  <main id="main">  
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">  
+        <div class="row justify-content-center">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card"> 
+              <div class="card-body">
+			   <div class="section-title ">
+				  <h2 data-aos="fade-in">Machine Learning App with Flask</h2>
+				  <p data-aos="fade-in">Deployed using AWS</p>
+				</div>
+                <form action="{{ url_for('predict')}}" method="POST">
+					<p>Enter Your Message Here</p>  
+					<div class="form-group">
+						<textarea class="form-control" name="message" rows="5" placeholder="Enter Your Message Here"></textarea> 
+					</div>
+					<div class="text-center">
+						<input type="submit" class="btn-info " value="predict"> 
+					</div>
+					
+				</form>
+              </div>
+            </div>
+          </div> 
+      </div>
+    </section><!-- End Services Section -->
+ 
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+             A Cloud computing project
+          </div>
+        </div> 
+ 
+
+      </div>
+    </div>
+
+    
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> 
+
+</body>
+
+</html>

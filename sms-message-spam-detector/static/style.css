@@ -1,0 +1,10 @@
+input[type="submit"] {
+		background: #fdc134;
+		border: 0;
+		padding: 10px 24px;
+		color: #fff;
+		transition: 0.4s;
+	}
+.headerText{
+	color:#fdc134!important;
+}
