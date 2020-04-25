@@ -33,7 +33,6 @@ The model was deployed in cloud using the following steps:
 ![image](https://user-images.githubusercontent.com/47410643/80268631-cf46ad80-8676-11ea-9df2-d78de0d495ea.png)
   
 ![image](https://user-images.githubusercontent.com/47410643/80268638-ee453f80-8676-11ea-8334-3092c33cb513.png)  
-
 <li> Once deployed, load testing was done on the application using load test
   
   
